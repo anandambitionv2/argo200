@@ -17,7 +17,7 @@ spec:
         agentpool: agentpool  # <-- This targets the specific node pool
       containers:
       - name: c1
-        image: acrargotest.azurecr.io/frontend:2156
+        image: acrargotest.azurecr.io/frontend
         # resources:
         #   limits:
         #     cpu: "5m"
