@@ -18,8 +18,7 @@ spec:
       - name: rollouts-demo
         image: acrargotest.azurecr.io/frontend
         imagePullPolicy: Always
-        ports:
-        - containerPort: 80
+      
   strategy:
     blueGreen: 
       # activeService specifies the service to update with the new template hash at time of promotion.
@@ -48,7 +47,7 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 8080
+    targetPort: 80
 
 ---
 kind: Service
@@ -63,4 +62,4 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-    targetPort: 8080
+    targetPort: 80
