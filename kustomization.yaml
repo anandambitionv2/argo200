@@ -5,4 +5,4 @@ resources:
   - namespace.yml
 images:
   - name: acrargotest.azurecr.io/frontend
-    newTag: "2172"
+    newTag: "2173"
